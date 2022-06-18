@@ -1,0 +1,143 @@
+:root {
+  --border-radius: 30px;
+}
+
+.header {
+  display: flex;
+}
+
+.center {
+  text-align: center;
+}
+
+.link:hover > .tag {
+  opacity: 1;
+}
+
+.headline {
+  color: white;
+  margin-top: 1px;
+  display: inline;
+}
+
+body {
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-family: sans-serif;
+}
+
+.Info {
+  color: white;
+  background-color: rgb(34, 34, 34);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(121, 121, 121);
+  border-radius: 30px;
+  margin-top: 150px;
+  margin-left: 500px;
+  margin-right: 500px;
+  padding: 30px 50px;
+  display: inline-block;
+}
+
+.About {
+  background-color: rgb(34, 34, 34);
+  border-radius: 30px;
+  border-color: white;
+  color: white;
+  margin-top: 100px;
+  padding: 30px 50px;
+}
+
+.About:hover {
+  box-shadow: 0 14px 28px rgba(154, 154, 154, 0.15),
+    0 10px 10px rgba(154, 154, 154, 0.15);
+  transform: translate(0, -0.25rem) scale(1.01);
+}
+
+.Xbutton {
+  background-color: red;
+}
+
+@keyframes fadein {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tag {
+  color: white;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 300ms ease-in-out;
+  background-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-color: dimgray;
+  border-radius: var(--border-radius);
+  width: max-content;
+  padding: 4px;
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.MediaBox {
+  background-color: rgb(34, 34, 34);
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(97, 97, 97);
+  border-radius: 30px;
+  /* margin-left: 875px;
+  margin-right: 875px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.Kontakt {
+  margin-top: 150px;
+}
+
+.FormularBox {
+  background-color: rgb(34, 34, 34);
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 10px 10px;
+  display: inline-block;
+}
+
+.avatar {
+  border: 1px solid white;
+  background-color: rgb(34, 34, 34);
+  border-radius: 23px;
+  margin-bottom: 12px;
+}
+
+.Welcome {
+  background-color: white;
+  border-radius: var(--border-radius);
+  border-style: outset;
+  border-color: black;
+  padding: 10px 10px;
+  margin-top: 100px;
+  margin-left: 700px;
+  margin-right: 700px;
+}
